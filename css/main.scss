@@ -1,0 +1,391 @@
+$first-breakpoint: 700px;
+$second-breakpoint: 586px;
+$iphone-breakpoint: 430px;
+$iphone2-breakpoint: 390px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-link {
+    color: black;
+    // margin-left: -10px;
+    padding: 5px;
+    
+    &:hover {
+        opacity: 0.7;
+        color: black;
+    }
+}
+
+.restaurant-name {
+    color: black;
+    font-weight: 400;
+    font-size: 40px;
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+        opacity: .7;
+    }
+}
+
+.reserv {
+    color: black;
+    float: right;
+
+    &:hover {
+        color: black;
+        text-decoration: none;
+        opacity: .7;
+    }
+}
+
+.main-picture{
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+}
+
+.carousel-img {
+    height: 95vh;
+    padding: 0px 15px 0px 15px;
+}
+
+.carousel-caption {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.last {
+    height: 60vh;
+    width: 100%;
+    padding: 15px;
+}
+
+.quote {
+    font-size: 40px;
+    text-align: center;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey-container {
+    background-color: black;
+    height: 35vh;
+    padding: 15px;
+
+    .first {
+        font-size: 65px;
+    }
+
+    .yellow{
+        margin-top: 35px;
+
+        .yellow-btn{
+            color: black;
+            padding: 15px 30px;
+            background: rgb(216, 169, 40);
+            
+            &:hover {
+                color: black;
+                background-color: rgb(185, 147, 19);
+            }
+        }
+    }
+    .second {
+        margin: 10px 0px;
+    }
+
+    .third {
+        margin: 10px 0px;
+    }
+
+    .fourth{
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: $first-breakpoint) {
+    .home-link{
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .reserv {
+        font-size: 12px;
+    }
+
+    .main-picture{
+        height: 70vh;
+    }
+
+    .restaurant-name {
+        font-size: 32px;
+    }
+
+    h1.container-quote {
+        font-size: 32px;
+    }
+
+    p.container-quote {
+        font-size: 16px;
+    }
+
+    .carousel-img {
+        height: 60vh;
+    }
+
+    .carousel-caption {
+        font-size: 18px;
+    }
+
+    p.quote {
+        font-size: 22px;
+    }
+
+    .grey-container{
+        height: 30vh;
+    }
+
+    .row .first {
+        font-size: 45px;
+    }
+
+    .second {
+        font-size: 14px;
+    }
+
+    .third {
+        font-size: 14px;
+    }
+
+    .fourth{
+        font-size: 14px;
+    }
+
+    .yellow-btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: $second-breakpoint){
+    .home-link {
+        font-size: 12px;
+        position: relative;
+        left: -15px;
+    }
+
+    .restaurant-name {
+        font-size: 26px;
+    }
+
+    .reserv {
+        font-size: 12px;
+    }
+
+    .main-picture{
+        height: 55vh;
+    }
+
+    h1.container-quote {
+        font-size: 26px;
+    }
+
+    p.container-quote {
+        font-size: 14px;
+    }
+
+    .carousel-img {
+        height: 50vh;
+    }
+
+    p.quote {
+        font-size: 16px;
+    }
+
+    .last {
+        height: 40vh;
+    }
+
+    .grey-container{
+        height: 27vh;
+    }
+
+    .row .first {
+        font-size: 35px;
+    }
+
+    .second {
+        font-size: 12px;
+    }
+
+    .third {
+        font-size: 12px;
+    }
+
+    .fourth{
+        font-size: 12px;
+    }
+
+    .yellow-btn {
+        font-size: 10px;
+    }
+}
+
+
+.ham-container{
+    display: none;
+}
+
+@media(max-width: $second-breakpoint){
+    .grey-container{
+        height: 32vh;
+    }
+
+    .home-link {
+        font-size: 11px;
+        margin-left: -25px;
+        display: none;
+    }
+
+    .restaurant-name {
+        font-size: 32px;
+        position: absolute;
+        left: -100%;
+    }
+
+    .reserv {
+        font-size: 11px;
+        display: none;
+    }
+
+    .ham-container {
+        display: inline;
+        width: 100%;
+        height: 15vh;
+        background-size: 475px 275px;
+        background-position: center;
+        display: inline;
+    
+        .navbar {
+            width: 200px;
+            height: 100%;
+            background-color: rgb(155, 155, 155);
+            position: fixed;
+            top: 0;
+            right: -300px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+            z-index: 15;
+        }
+    
+        .change {
+            right: 0;
+        }
+    
+        .hamburger-menu {
+            width: 35px;
+            height: 30px;
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+    
+            .line {
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                transition: all 0.8s;
+            }
+        }
+    
+        .change .line-1 {
+            transform: rotateZ(-405deg) translate(-8px, 6px);
+        }
+        
+        .change .line-2 {
+            opacity: 0;
+        }
+        
+        .change .line-3 {
+            transform: rotateZ(405deg) translate(-8px, -6px);
+        }
+    
+    
+        .nav-list {
+            text-align: right;
+    
+            .nav-item {
+                list-style: none;
+                margin: 25px;
+    
+                .nav-link {
+                    text-decoration: none;
+                    font-size: 22px;
+                    color: black;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    position: relative;
+                    padding: 3px 0;
+                }
+            }
+        }
+    
+        .nav-link::before, 
+        .nav-link::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
+    
+        .nav-link::after {
+            bottom: 0;
+            transform-origin: right;
+        }
+        
+        .nav-link::before {
+            top: 0;
+            transform-origin: left;
+        }
+    
+        .nav-link:hover::before,
+        .nav-link:hover::after{
+            transform: scaleX(1);
+        }
+    }
+}
+
+@media(max-width: $iphone2-breakpoint){
+    .grey-container{
+        height: 35vh;
+    }
+
+    .restaurant-name {
+        font-size: 28px;
+    }
+}
