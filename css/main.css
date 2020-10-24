@@ -371,4 +371,22 @@
     font-size: 28px;
   }
 }
+
+@media (max-width: 812px) and (orientation: landscape) {
+  .main-picture {
+    height: 120vh;
+  }
+  .carousel-img {
+    height: 100vh;
+  }
+  .last-img {
+    margin-top: 50px;
+  }
+  .last-img .last {
+    margin-top: 25px;
+  }
+  .grey-container {
+    height: 82vh;
+  }
+}
 /*# sourceMappingURL=main.css.map */

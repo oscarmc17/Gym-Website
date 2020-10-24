@@ -389,3 +389,26 @@ $iphone2-breakpoint: 390px;
         font-size: 28px;
     }
 }
+
+
+@media (max-width: 812px) and (orientation: landscape){
+    .main-picture {
+        height: 120vh;
+    }
+    
+    .carousel-img {
+        height: 100vh;
+    }
+
+    .last-img {
+       margin-top: 50px;
+       
+       .last {
+           margin-top: 25px;
+       }
+    }
+
+    .grey-container {
+        height: 82vh;
+    }
+}
