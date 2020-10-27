@@ -54,7 +54,6 @@
 
 .main-picture {
   width: 100%;
-  height: 100vh;
   padding: 15px;
 }
 
@@ -70,6 +69,8 @@
 
 .last {
   height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   padding: 15px;
 }
@@ -77,7 +78,6 @@
 .quote {
   font-size: 40px;
   text-align: center;
-  height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,11 +87,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 25px;
 }
 
 .grey-container {
   background-color: black;
-  height: 35vh;
   padding: 15px;
 }
 
@@ -153,10 +153,7 @@
     font-size: 18px;
   }
   p.quote {
-    font-size: 22px;
-  }
-  .grey-container {
-    height: 30vh;
+    font-size: 28px;
   }
   .row .first {
     font-size: 45px;
@@ -196,17 +193,11 @@
   p.container-quote {
     font-size: 14px;
   }
-  .carousel-img {
-    height: 50vh;
-  }
   p.quote {
-    font-size: 16px;
+    font-size: 22px;
   }
   .last {
     height: 40vh;
-  }
-  .grey-container {
-    height: 27vh;
   }
   .row .first {
     font-size: 35px;
@@ -230,9 +221,6 @@
 }
 
 @media (max-width: 586px) {
-  .grey-container {
-    height: 35vh;
-  }
   .home-link {
     font-size: 11px;
     margin-left: -25px;
@@ -241,7 +229,7 @@
   .restaurant-name {
     font-size: 32px;
     position: absolute;
-    left: -100%;
+    left: -95%;
   }
   .reserv {
     font-size: 11px;
@@ -364,9 +352,6 @@
 }
 
 @media (max-width: 390px) {
-  .grey-container {
-    height: 35vh;
-  }
   .restaurant-name {
     font-size: 28px;
   }
@@ -379,14 +364,15 @@
   .carousel-img {
     height: 100vh;
   }
+  .quote {
+    margin: 25px;
+    padding: 50px;
+  }
   .last-img {
     margin-top: 50px;
   }
   .last-img .last {
     margin-top: 25px;
-  }
-  .grey-container {
-    height: 82vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
